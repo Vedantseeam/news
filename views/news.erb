@@ -5,3 +5,8 @@
                     <br>
                     <% j = j+1 %>
                 <% end %>
+                <% for headlines in @articles%>
+<a href= <%= headlines['url'] %>>
+<p><%= headlines['title']%></p>
+</a>
+<% end %>

@@ -11,7 +11,7 @@ before { puts "Parameters: #{params}" }
 ForecastIO.api_key = "58c6427e2b29b06da70a7dabeffe76d1"
 
 # Initialize News API
-newsapi = News.new("4f11a391ec2940a789cf7e40e66bef9a")     
+news-api = News.new("4f11a391ec2940a789cf7e40e66bef9a")     
 
 get "/" do
   # show a view that asks for the location
@@ -48,3 +48,4 @@ get "/news" do
     @topheadlinearray << articlenumber["title"]
     @urlarray << articlenumber["url"]
   end
+end
