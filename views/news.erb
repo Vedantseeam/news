@@ -1,0 +1,7 @@
+<% j =1%>
+                <% for articlenumber in @newsarray %>
+                    <p> <strong> Headline <%= j %>:</strong> <%= articlenumber["title"] %> </p>
+                    <p><strong> URL: </strong><%= articlenumber["url"] %></p>
+                    <br>
+                    <% j = j+1 %>
+                <% end %>
